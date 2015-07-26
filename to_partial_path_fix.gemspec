@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Monkey-patch for to_partial_path on namespaced models}
   spec.description   = %q{If you have a namespaced model, like `User::Profile` and want to render partial like `render @user.profile`, you find that it tryes to find `profile` partial in `user/profiles/profile`. But you've got `users/` folder already! Why don't use it as a parent directory for nested models? I hope this will be fixed in rails soon }
-  spec.homepage      = "http://example.com"
+  spec.homepage      = "https://github.com/olegantonyan/to_partial_path_fix"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or

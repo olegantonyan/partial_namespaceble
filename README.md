@@ -29,7 +29,7 @@ I hope this behavior will be fixed in rails soon.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'to_partial_path_fix', github: 'olegantonyan/to_partial_path_fix.git'
+gem 'to_partial_path_fix', github: 'olegantonyan/to_partial_path_fix'
 ```
 
 And then execute:

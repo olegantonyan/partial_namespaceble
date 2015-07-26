@@ -6,7 +6,9 @@ end
 module ActiveModel
   module Conversion
     def to_partial_path
-      parts = self.class._to_partial_path.split('/')
+      original_path = self.class._to_partial_path
+      parts = original_path.split('/')
+      return original_path if parts.length == 2
       pluralized_parts = parts[0..-3].map { |p| p.pluralize }
       "#{pluralized_parts.join('/')}/#{parts.last(2).join('/')}".freeze
     end

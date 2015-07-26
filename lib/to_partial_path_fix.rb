@@ -8,7 +8,7 @@ module ActiveModel
     def to_partial_path
       parts = self.class._to_partial_path.split('/')
       pluralized_parts = parts[0..-3].map { |p| p.pluralize }
-      "#{pluralized_parts.join('/')}/#{parts.last(2).join('/')}"
+      "#{pluralized_parts.join('/')}/#{parts.last(2).join('/')}".freeze
     end
   end
 end

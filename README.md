@@ -49,6 +49,7 @@ class User::Profile < ActiveRecord::Base
   include PartialNamespaceble
   belongs_to :user
 end
+```
 
 ## Development
 

@@ -1,4 +1,4 @@
-# ToPartialPathFix
+# PartialNamespaceble
 
 Monkey-patch for this issue [rails/rails/issues/21004](https://github.com/rails/rails/issues/21004)
 
@@ -29,7 +29,7 @@ I hope this behavior will be fixed in rails soon.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'to_partial_path_fix', github: 'olegantonyan/to_partial_path_fix'
+gem 'partial_namespaceble', github: 'olegantonyan/partial_namespaceble'
 ```
 
 And then execute:
@@ -38,11 +38,17 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install to_partial_path_fix
+    $ gem install partial_namespaceble
 
 ## Usage
 
-Just install it and that's it!
+Include `PartialNamespaceble` into your namespaced model
+```ruby
+# app/models/user/profile.rb
+class User::Profile < ActiveRecord::Base
+  include PartialNamespaceble
+  belongs_to :user
+end
 
 ## Development
 
@@ -52,7 +58,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/olegantonyan/to_partial_path_fix. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/olegantonyan/partial_namespaceble. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License

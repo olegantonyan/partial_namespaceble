@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'to_partial_path_fix/version'
+require 'partial_namespaceble/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "to_partial_path_fix"
-  spec.version       = ToPartialPathFix::VERSION
+  spec.name          = "partial_namespaceble"
+  spec.version       = PartialNamespaceble::VERSION
   spec.authors       = ["Oleg Antonyan"]
   spec.email         = ["oleg.b.antonyan@gmail.com"]
 
   spec.summary       = %q{Monkey-patch for to_partial_path on namespaced models}
   spec.description   = %q{If you have a namespaced model, like `User::Profile` and want to render partial like `render @user.profile`, you find that it tryes to find `profile` partial in `user/profiles/profile`. But you've got `users/` folder already! Why don't use it as a parent directory for nested models? I hope this will be fixed in rails soon }
-  spec.homepage      = "https://github.com/olegantonyan/to_partial_path_fix"
+  spec.homepage      = "https://github.com/olegantonyan/partial_namespaceble"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or

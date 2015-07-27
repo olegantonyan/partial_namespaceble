@@ -2,15 +2,17 @@ require 'spec_helper'
 
 class User
   include ActiveModel::Conversion
+  include PartialNamespaceble
 end
 
 class User::Profile
   include ActiveModel::Conversion
+  include PartialNamespaceble
 end
 
-describe ToPartialPathFix do
+describe PartialNamespaceble do
   it 'has a version number' do
-    expect(ToPartialPathFix::VERSION).not_to be nil
+    expect(PartialNamespaceble::VERSION).not_to be nil
   end
 
   it 'returns correct partial path for namespaced model' do

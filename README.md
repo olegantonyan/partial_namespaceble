@@ -22,8 +22,6 @@ render @user.profile
 Where should you put your `profile` partial? My answer is `app/views/users/profiles/`, but rails disagree and raises missing partial because it tries to find this partial in `app/views/user/profiles`.
 There is a special method `to_partial_path` in `ActiveModel` which is responsible for partial path, but you don't want to override it on each of your models. That's why this gem exists.
 
-I hope this behavior will be fixed in rails soon.
-
 ## Installation
 
 Add this line to your application's Gemfile:

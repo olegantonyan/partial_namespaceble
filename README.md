@@ -1,6 +1,6 @@
 # PartialNamespaceble
 
-Monkey-patch for this issue [rails/rails/issues/21004](https://github.com/rails/rails/issues/21004)
+Workaround for this issue [rails/issues/21004](https://github.com/rails/rails/issues/21004)
 
 Let's say you have namespaced models, like these:
 ```ruby

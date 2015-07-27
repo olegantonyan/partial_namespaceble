@@ -32,4 +32,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "activemodel", ">= 3.2.22"
   spec.add_development_dependency "activesupport", ">= 3.2.22"
   spec.add_development_dependency "rspec"
+  spec.required_ruby_version = ">= 2.0.0"
 end
